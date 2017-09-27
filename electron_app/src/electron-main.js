@@ -116,7 +116,7 @@ if (shouldQuit) {
 
 
 const launcher = new AutoLaunch({
-    name: vectorConfig.brand || 'Riot',
+    name: vectorConfig.brand || 'Saphar',
     isHidden: true,
     mac: {
         useLaunchAgent: true,
@@ -205,7 +205,7 @@ electron.app.on('ready', () => {
     // Create trayIcon icon
     tray.create({
         icon_path: iconPath,
-        brand: vectorConfig.brand || 'Riot',
+        brand: vectorConfig.brand || 'Saphar',
     });
 
     if (!argv.hidden) {
@@ -262,4 +262,4 @@ electron.app.on('before-quit', () => {
 // installer uses for the shortcut icon.
 // This makes notifications work on windows 8.1 (and is
 // a noop on other platforms).
-electron.app.setAppUserModelId('com.squirrel.riot-web.Riot');
+electron.app.setAppUserModelId('com.squirrel.saphar-web.Saphar');

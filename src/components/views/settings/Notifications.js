@@ -120,7 +120,7 @@ module.exports = React.createClass({
         var emailPusherPromise;
         if (event.target.checked) {
             var data = {}
-            data['brand'] = this.props.brand || 'Riot';
+            data['brand'] = this.props.brand || 'Saphar';
             emailPusherPromise = UserSettingsStore.addEmailPusher(address, data);
         } else {
             var emailPusher = UserSettingsStore.getEmailPusher(this.state.pushers, address);
@@ -799,7 +799,7 @@ module.exports = React.createClass({
                 <div>
                     <h3>{ _t('Advanced notification settings') }</h3>
                     { _t('There are advanced notifications which are not shown here') }.<br/>
-                    { _t('You might have configured them in a client other than Riot. You cannot tune them in Riot but they still apply') }.
+                    { _t('You might have configured them in a client other than Saphar. You cannot tune them in Saphar but they still apply') }.
                     <ul>
                         { externalRules }
                     </ul>

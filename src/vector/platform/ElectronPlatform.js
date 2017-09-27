@@ -28,7 +28,7 @@ remote.autoUpdater.on('update-downloaded', onUpdateDownloaded);
 
 // try to flush the rageshake logs to indexeddb before quit.
 ipcRenderer.on('before-quit', function () {
-    console.log('riot-desktop closing');
+    console.log('saphar-desktop closing');
     rageshake.flush();
 });
 
@@ -191,7 +191,7 @@ export default class ElectronPlatform extends VectorBasePlatform {
     }
 
     getDefaultDeviceDisplayName(): string {
-        return _t('Riot Desktop on %(platformName)s', { platformName: platformFriendlyName() });
+        return _t('Saphar Desktop on %(platformName)s', { platformName: platformFriendlyName() });
     }
 
     screenCaptureErrorString(): ?string {

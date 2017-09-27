@@ -61,7 +61,7 @@
     "Remove": "Fjerne",
     "remove": "fjerner",
     "Remove from Directory": "Fjern fra fortegnelse",
-    "Riot does not know how to join a room on this network": "Riot ved ikke, hvordan man kan deltage i et rum på dette netværk",
+    "Saphar does not know how to join a room on this network": "Saphar ved ikke, hvordan man kan deltage i et rum på dette netværk",
     "Room directory": "Rum fortegnelse",
     "Room not found": "Rumet ikke fundet",
     "Search for a room": "Søg efter et rum",
@@ -79,6 +79,6 @@
     "Unnamed room": "Unnamed rum",
     "World readable": "Læselig til alle",
     "You are not receiving desktop notifications": "Du modtager ikke desktop meddelelser",
-    "You might have configured them in a client other than Riot. You cannot tune them in Riot but they still apply": "Du har muligvis konfigureret dem i en anden klient end Riot. Du kan ikke tune dem i Riot, men de gælder stadig",
+    "You might have configured them in a client other than Saphar. You cannot tune them in Saphar but they still apply": "Du har muligvis konfigureret dem i en anden klient end Saphar. Du kan ikke tune dem i Saphar, men de gælder stadig",
     "Close": "Luk"
 }

@@ -72,7 +72,7 @@ export default async function sendBugReport(bugReportEndpoint, opts) {
 
     const body = new FormData();
     body.append('text', opts.userText || "User did not supply any additional text.");
-    body.append('app', 'riot-web');
+    body.append('app', 'saphar-web');
     body.append('version', version);
     body.append('user_agent', userAgent);
 

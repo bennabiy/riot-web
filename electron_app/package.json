@@ -1,6 +1,6 @@
 {
-  "name": "riot-web",
-  "productName": "Riot",
+  "name": "saphar-web",
+  "productName": "Saphar",
   "main": "src/electron-main.js",
   "version": "0.12.3",
   "description": "A feature-rich client for Matrix.org",

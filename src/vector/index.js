@@ -46,7 +46,7 @@ rageshake.init().then(() => {
 });
 
 window.addEventListener('beforeunload', (e) => {
-    console.log('riot-web closing');
+    console.log('saphar-web closing');
     // try to flush the logs to indexeddb
     rageshake.flush();
 });
@@ -158,11 +158,11 @@ var onNewScreen = function(screen) {
 //
 // If we're in electron, we should never pass through a file:// URL otherwise
 // the identity server will try to 302 the browser to it, which breaks horribly.
-// so in that instance, hardcode to use riot.im/app for now instead.
+// so in that instance, hardcode to use client.saphar.net for now instead.
 var makeRegistrationUrl = function(params) {
     let url;
     if (window.location.protocol === "file:") {
-        url = 'https://riot.im/app/#/register';
+        url = 'https://client.saphar.net/#/register';
     } else {
         url = (
             window.location.protocol + '//' +
@@ -248,13 +248,13 @@ async function loadApp() {
 
     if (!preventRedirect) {
         if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
-            if (confirm(languageHandler._t("Riot is not supported on mobile web. Install the app?"))) {
+            if (confirm(languageHandler._t("Saphar is not supported on mobile web. Install the app?"))) {
                 window.location = "https://itunes.apple.com/us/app/vector.im/id1083446067";
                 return;
             }
         }
         else if (/Android/.test(navigator.userAgent)) {
-            if (confirm(languageHandler._t("Riot is not supported on mobile web. Install the app?"))) {
+            if (confirm(languageHandler._t("Saphar is not supported on mobile web. Install the app?"))) {
                 window.location = "https://play.google.com/store/apps/details?id=im.vector.alpha";
                 return;
             }
