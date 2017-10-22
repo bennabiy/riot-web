@@ -63,7 +63,7 @@ fi
 
 if [ ! -f package.json ]; then
     echo "No package.json found. This script must be run from"
-    echo "the riot-web directory."
+    echo "the saphar-web directory."
     exit
 fi
 
@@ -126,5 +126,5 @@ cp $distdir/*.deb "$projdir/electron_app/dist/"
 
 rm -rf "$builddir"
 
-echo "Riot Desktop is ready to go in $pubdir: this directory can be hosted on your web server."
+echo "Saphar Desktop is ready to go in $pubdir: this directory can be hosted on your web server."
 echo "deb archives are in electron_app/dist/ - these should be added into your debian repository"

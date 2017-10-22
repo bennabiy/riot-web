@@ -162,7 +162,7 @@
     "In order to diagnose problems, logs from this client will be sent with this bug report. If you would prefer to only send the text above, please untick:": "A problémák diagnosztizálása érdekében erről a kliensről a hibajelentésben naplók lesznek elküldve. Ha csak az alábbi szöveget szeretnéd elküldeni akkor ezt ne jelöld meg:",
     "Please describe the bug. What did you do? What did you expect to happen? What actually happened?": "Írd le a hibát. Mit csináltál? Mi az amit szerettél volna ha történik? Ezzel szemben mi az ami történt?",
     "Login": "Bejelentkezés",
-    "Welcome to Saphar.im": "Üdvözlünk a Saphar.im-en",
+    "Welcome to Saphar": "Üdvözlünk a Saphar-en",
     "Decentralised, encrypted chat &amp; collaboration powered by [matrix]": "Decentralizált, titkosított csevegés és kollaboráció [matrix] alapokon",
     "Search the room directory": "Keresés a szobák jegyzékében",
     "Chat with Saphar Bot": "Csevegés a Saphar Robottal",

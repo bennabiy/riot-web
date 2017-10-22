@@ -127,11 +127,11 @@ function next(i, err) {
                 .on('error', errCheck);
         } else if (opts.lang) {
             const reactSdkFile = 'node_modules/matrix-react-sdk/src/i18n/strings/' + source + '.json';
-            const riotWebFile = 'src/i18n/strings/' + source + '.json';
+            const sapharWebFile = 'src/i18n/strings/' + source + '.json';
 
             const translations = {};
             const makeLang = () => { genLangFile(source, dest) };
-            [reactSdkFile, riotWebFile].forEach(function(f) {
+            [reactSdkFile, sapharWebFile].forEach(function(f) {
                 chokidar.watch(f)
                     .on('add', makeLang)
                     .on('change', makeLang)
@@ -154,10 +154,10 @@ function next(i, err) {
 
 function genLangFile(lang, dest) {
     const reactSdkFile = 'node_modules/matrix-react-sdk/src/i18n/strings/' + lang + '.json';
-    const riotWebFile = 'src/i18n/strings/' + lang + '.json';
+    const sapharWebFile = 'src/i18n/strings/' + lang + '.json';
 
     let translations = {};
-    [reactSdkFile, riotWebFile].forEach(function(f) {
+    [reactSdkFile, sapharWebFile].forEach(function(f) {
         if (fs.existsSync(f)) {
             Object.assign(
                 translations,

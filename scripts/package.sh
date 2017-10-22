@@ -21,17 +21,17 @@ npm run build$dev
 cp config.sample.json webapp/
 
 mkdir -p dist
-cp -r webapp riot-$version
+cp -r webapp saphar-$version
 
 # if $version looks like semver with leading v, strip it before writing to file
 if [[ ${version} =~ ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+(-.+)?$ ]]; then
-    echo ${version:1} > riot-$version/version
+    echo ${version:1} > saphar-$version/version
 else
-    echo ${version} > riot-$version/version
+    echo ${version} > saphar-$version/version
 fi
 
-tar chvzf dist/riot-$version.tar.gz riot-$version
-rm -r riot-$version
+tar chvzf dist/saphar-$version.tar.gz saphar-$version
+rm -r saphar-$version
 
 echo
-echo "Packaged dist/riot-$version.tar.gz"
+echo "Packaged dist/saphar-$version.tar.gz"

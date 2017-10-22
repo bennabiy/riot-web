@@ -15,10 +15,10 @@ use Term::ReadPassword;
 # then look at issues-burndown.pl
 
 my $gh = Net::GitHub->new(
-    login => 'ara4n', pass => read_password("github password: "),
+    login => 'bennabiy', pass => read_password("github password: "),
 );
 
-$gh->set_default_user_repo('vector-im', 'riot-web');
+$gh->set_default_user_repo('bennabiy', 'saphar-web');
 
 #my @issues = $gh->issue->repos_issues({ state => 'all', milestone => 3 });
 my @issues = $gh->issue->repos_issues({ state => 'all' });
@@ -109,4 +109,3 @@ foreach my $day (sort keys %$days) {
     }
     print "\n";
 }
-

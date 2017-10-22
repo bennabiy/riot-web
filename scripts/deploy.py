@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# download and unpack a riot-web tarball.
+# download and unpack a saphar-web tarball.
 #
 # Allows `bundles` to be extracted to a common directory, and a link to
 # config.json to be added.
@@ -137,7 +137,7 @@ class Deployer:
         return local_filename
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser("Deploy a Riot build on a web server.")
+    parser = argparse.ArgumentParser("Deploy a Saphar build on a web server.")
     parser.add_argument(
         "-p", "--packages-dir", default="./packages", help=(
             "The directory to download the tarball into. (Default: '%(default)s')"

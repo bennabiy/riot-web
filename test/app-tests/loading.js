@@ -88,7 +88,7 @@ describe('loading:', function () {
         // clear the indexeddbs so we can start from a clean slate next time.
         await Promise.all([
             test_utils.deleteIndexedDB('matrix-js-sdk:crypto'),
-            test_utils.deleteIndexedDB('matrix-js-sdk:riot-web-sync'),
+            test_utils.deleteIndexedDB('matrix-js-sdk:saphar-web-sync'),
         ]);
         console.log(`${Date.now()}: loading: afterEach complete`);
     });
@@ -328,7 +328,7 @@ describe('loading:', function () {
             }).done(done, done);
         });
 
-        it("logs in correctly with a Riot Team Server", function() {
+        it("logs in correctly with a Saphar Team Server", function() {
             sdk.setFetch(httpBackend.fetchFn); // XXX: ought to restore this!
 
             httpBackend.when('GET', '/pushrules').respond(200, {});

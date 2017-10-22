@@ -15,10 +15,10 @@ use Term::ReadPassword;
 # If you want instead the number of open issues on a given day, then look at issues-no-state.pl
 
 my $gh = Net::GitHub->new(
-    login => 'ara4n', pass => read_password("github password: "),
+    login => 'bennabiy', pass => read_password("github password: "),
 );
 
-$gh->set_default_user_repo('vector-im', 'riot-web');
+$gh->set_default_user_repo('bennabiy', 'saphar-web');
 
 #my @issues = $gh->issue->repos_issues({ state => 'all', milestone => 3 });
 my @issues = $gh->issue->repos_issues({ state => 'all' });
@@ -133,4 +133,3 @@ foreach my $day (sort keys %$days) {
     }
     print "\n";
 }
-
