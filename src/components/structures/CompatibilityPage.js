@@ -40,9 +40,9 @@ module.exports = React.createClass({
         return (
         <div className="mx_CompatibilityPage">
             <div className="mx_CompatibilityPage_box">
-                <p>{ _tJsx("Sorry, your browser is <b>not</b> able to run Riot.", /<b>(.*?)<\/b>/, (sub) => <b>{sub}</b>) } </p>
+                <p>{ _tJsx("Sorry, your browser is <b>not</b> able to run Saphar.", /<b>(.*?)<\/b>/, (sub) => <b>{sub}</b>) } </p>
                 <p>
-                { _t("Riot uses many advanced browser features, some of which are not available or experimental in your current browser.") }
+                { _t("Saphar uses many advanced browser features, some of which are not available or experimental in your current browser.") }
                 </p>
                 <p>
                 { _tJsx('Please install <a href="https://www.google.com/chrome">Chrome</a> or <a href="https://getfirefox.com">Firefox</a> for the best experience.',

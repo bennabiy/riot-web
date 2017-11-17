@@ -46,7 +46,7 @@ module.exports = React.createClass({
     translate: function(s) {
         s = sanitizeHtml(_t(s));
         // ugly fix for https://github.com/vector-im/riot-web/issues/4243
-        s = s.replace(/Riot\.im/, '<a href="https://riot.im" target="_blank" rel="noopener">Riot.im</a>');
+        s = s.replace(/Saphar\.net/, '<a href="https://client.saphar.net" target="_blank" rel="noopener">Saphar.net</a>');
         s = s.replace(/\[matrix\]/, '<a href="https://matrix.org" target="_blank" rel="noopener"><img width="79" height="34" alt="[matrix]" style="padding-left: 1px;vertical-align: middle" src="home/images/matrix.svg"/></a>');
         return s;
     },

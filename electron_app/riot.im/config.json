@@ -1,6 +1,6 @@
 {
-    "update_base_url": "https://riot.im/download/desktop/update/",
-    "default_hs_url": "https://mtx.saphar.net",
+    "update_base_url": "https://client.saphar.net/download/desktop/update/",
+    "default_hs_url": "https://saphar.net",
     "default_is_url": "https://saphar.net",
     "brand": "Saphar",
     "integrations_ui_url": "https://scalar.vector.im/",
@@ -10,7 +10,7 @@
     "enableLabs": true,
     "roomDirectory": {
         "servers": [
-            "saphar.net:8448"
+            "saphar.net"
         ]
     },
     "piwik": {
